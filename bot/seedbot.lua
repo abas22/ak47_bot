@@ -202,7 +202,7 @@ end
 -- Create a basic config.json file and saves it.
 function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
-  config = {}
+  config = {
     enabled_plugins = {
     "onservice",
     "inrealm",
@@ -220,7 +220,7 @@ function create_config( )
     "invite",
     "all"
     },
-    sudo_users = {110626080,103649648,0,tonumber(135642014,171117943)}--Sudo users
+    sudo_users = {110626080,103649648,0,tonumber(135642014)}--Sudo users
     disabled_channels = {},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
